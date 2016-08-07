@@ -95,7 +95,7 @@ if (!place_meeting(x,y+velocidad,objpared))&amp;&amp;(!place_meeting(x-velocidad
             <kind>1</kind>
             <string>///Gestión de llaves 
 
-if (place_meeting(x,y,objllaveroja))
+/*if (place_meeting(x,y,objllaveroja))
    {
    with(objllaveroja) {instance_destroy();}
    llaveroja = true;
@@ -105,7 +105,9 @@ if (place_meeting(x,y,objllaveroja))
    {
    with(objllavedorada) {instance_destroy();}
    llavedorada = true;
-   } 
+   }/*
+   
+   
 
 </string>
           </argument>
@@ -135,22 +137,22 @@ if (llavedorada)
     (place_meeting(x-velocidad,y,objpuerta))||
     (place_meeting(x,y+velocidad,objpuerta))||
     (place_meeting(x,y-velocidad,objpuerta))
-     {
+    {
      with(objpuerta){instance_destroy();}
-     }
-     }
+    }
+    }
      
-    if (llaveroja)
+  /* if (llaveroja)
     {
     if (place_meeting(x+velocidad,y,objpuerta))||
     (place_meeting(x-velocidad,y,objpuerta))||
     (place_meeting(x,y+velocidad,objpuerta))||
     (place_meeting(x,y-velocidad,objpuerta))
-     {
+    {
      with(objpuerta){instance_destroy();}
-     }
-     } 
-   
+    }
+    } 
+   /*
    
 </string>
           </argument>

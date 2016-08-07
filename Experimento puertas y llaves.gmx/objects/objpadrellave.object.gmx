@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>id_puerta = noone;
+            <string>/*id_puerta = noone;/*
 </string>
           </argument>
         </arguments>
@@ -48,8 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (id_puerta) event_user(0);
-instance_destroy ();
+            <string>/*with (id_puerta) event_user(0);
+instance_destroy ();/*
 </string>
           </argument>
         </arguments>

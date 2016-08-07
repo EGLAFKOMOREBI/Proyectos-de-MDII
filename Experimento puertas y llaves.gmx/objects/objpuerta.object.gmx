@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>llaves = 5;
+            <string>///N° de llaves
+llaves = 1;
 </string>
           </argument>
         </arguments>
@@ -50,7 +51,7 @@
             <kind>1</kind>
             <string>///abrir puerta
 llaves --;
-if (llaves == 0) sprite_index = sprcero;
+if (llaves == 0) with (objpuerta) instance_destroy();
 
 </string>
           </argument>
