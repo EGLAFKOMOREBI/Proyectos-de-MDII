@@ -52,8 +52,8 @@ vspeed = 4;
             <string>///Movimiento del enemigo
 
 if ( y &gt; room_height + sprite_height/2){
-   instance_destroy();
-     }
+     x = irandom_range (sprite_width/2, room_width -sprite_width/2);
+     y = -sprite_height/2;}
 </string>
           </argument>
         </arguments>
@@ -87,7 +87,7 @@ instance_create(x,y, obj_ExploEnemy);
 x = irandom_range(sprite_width/2, room_width - sprite_width/2);
 y = -sprite_height/2;
 score = score + 5;
-show_debug_message(score);
+show_debug_message("score" + string(score));
       
 </string>
           </argument>
@@ -115,7 +115,9 @@ show_debug_message(score);
 audio_play_sound(snd_ExploMyPlane, 10, false);
 instance_create(x,y,obj_ExploEnemy);
 health -= 30;
-instance_destroy();
+x = irandom_range (sprite_width/2, room_width -sprite_width/2);
+y = -sprite_height/2;
+
 
 
 

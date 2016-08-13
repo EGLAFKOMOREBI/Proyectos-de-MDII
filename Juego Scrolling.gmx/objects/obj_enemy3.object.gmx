@@ -53,7 +53,8 @@ vspeed= 4;
             <string>///Movimiento
 
 if( y &gt; room_height + sprite_height/2){
-   instance_destroy();}
+    x = irandom_range (sprite_width/2, room_width -sprite_width/2);
+    y = -sprite_height/2;}
     
 var die = floor(random(80)) + 1;
 if(die ==1){
@@ -88,7 +89,8 @@ with (other){ // the bullet
       instance_destroy();}
       
 instance_create(x, y, obj_ExploEnemy);
-instance_destroy();
+x = irandom_range (sprite_width/2, room_width -sprite_width/2);
+y = -sprite_height/2;
 score = score + 20;
 show_debug_message("score: " + string(score));
 </string>
@@ -118,7 +120,8 @@ show_debug_message("score: " + string(score));
 audio_play_sound(snd_ExploEnemy, 10, false);
 instance_create(x, y, obj_ExploEnemy);
 health -= 30;
-instance_destroy();
+x = irandom_range (sprite_width/2, room_width -sprite_width/2);
+y = -sprite_height/2;
 </string>
           </argument>
         </arguments>
