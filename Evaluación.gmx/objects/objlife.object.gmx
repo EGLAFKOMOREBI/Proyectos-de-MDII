@@ -51,7 +51,16 @@ health = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (lives &lt;= 0){room_goto(Lose);}
+            <string>///Vidas y nivel de daño
+
+if(health &lt;= 0){
+   health = 100;
+   audio_play_sound(sndExploJugador, 10, false);
+   with (objJugador){
+   instance_change(objExplo, false);
+}
+}
+if (lives &lt;= 0){room_goto(Lose)};
 </string>
           </argument>
         </arguments>

@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="4" ename="objenemigo1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,61 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Velocidad de la bala
-vspeed = -10;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>101</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>000101000</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>4</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="1" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>show_debug_message("Bullet is destroyed");
+            <string>with (other){
+instance_destroy();
+}
+score = score + 5;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="4" ename="objmuro">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -96,10 +51,8 @@ vspeed = -10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Movimiento de la bala
-
-if ( y &lt;-sprite_height/2){instance_destroy();}
-
+            <string>///DEstruir
+instance_destroy();
 </string>
           </argument>
         </arguments>

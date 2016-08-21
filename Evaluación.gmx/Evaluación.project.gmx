@@ -24,6 +24,7 @@
     <sprite>sprites\sprExploEnemy</sprite>
     <sprite>sprites\sprmeta</sprite>
     <sprite>sprites\sprpeque</sprite>
+    <sprite>sprites\sprExplo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -31,6 +32,9 @@
     <background>background\background8</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\objJugador</object>
     <object>objects\objBala</object>
@@ -39,11 +43,11 @@
     <object>objects\objenemigo2</object>
     <object>objects\objBala2</object>
     <object>objects\objmuro</object>
-    <object>objects\objcontroladorenemigos</object>
     <object>objects\objExploEnemy</object>
     <object>objects\objmeta</object>
     <object>objects\Objwin_lose</object>
     <object>objects\objlife</object>
+    <object>objects\objExplo</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Nivel1</room>
