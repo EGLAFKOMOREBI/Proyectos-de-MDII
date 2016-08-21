@@ -90,7 +90,7 @@ can_shoot= 3;
 //Obtener las entradas de teclado
 key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
-key_space = keyboard_check_pressed(vk_space);
+key_space = keyboard_check_pressed(vk_alt);
 
 //Cambio de color del jugador
 if keyboard_check(vk_right){
@@ -101,7 +101,7 @@ if keyboard_check(vk_left){
    sprite_index = sprJugador_izquierda;
    }
    
-if keyboard_check_pressed(vk_space){
+if keyboard_check_pressed(vk_alt){
    sprite_index = sprJugador_salto;
    }
 

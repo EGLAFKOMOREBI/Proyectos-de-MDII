@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -83,7 +83,7 @@ if(place_meeting(x, y + vsp, objmuro))
     
     
      
-    if((fh) &amp;&amp; !position_meeting((x+(sprite_width/2)*dir), y+(sprite_height/2)+6,objmuro))
+    if(fh) &amp;&amp; !position_meeting((x+(sprite_width/2)*dir), y+(sprite_height/2)+8,objmuro)
     {
         dir *= -1;
     }
@@ -100,10 +100,7 @@ if(objJugador.y &lt; y-16)
       with(objJugador) vsp = -jumpspeed;
       instance_destroy();
       }
-      else
-      {
-      game_restart();
-      }
+     
 }
 
    var die = floor(random(30)) + 1;

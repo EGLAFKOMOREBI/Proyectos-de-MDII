@@ -39,8 +39,10 @@
     <object>objects\objJugador</object>
     <object>objects\objBala</object>
     <object>objects\objenemigo1</object>
+    <object>objects\objhijoenemigo1</object>
     <object>objects\objBala1</object>
     <object>objects\objenemigo2</object>
+    <object>objects\objhijoenemigo2</object>
     <object>objects\objBala2</object>
     <object>objects\objmuro</object>
     <object>objects\objExploEnemy</object>
