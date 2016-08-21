@@ -47,7 +47,6 @@
     <object>objects\obj_enemyBullet1</object>
     <object>objects\obj_enemyBullet2</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\Nivel1</room>
   </rooms>

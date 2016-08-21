@@ -92,6 +92,9 @@ key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
 key_space = keyboard_check_pressed(vk_space);
 
+//Cambio de color del jugador
+
+
 //Operaciones con las entradas de teclado
 move = key_right - key_left;
 hsp = move * movespeed;
@@ -113,7 +116,7 @@ if (place_meeting(x,y+1, objmuro)){
 
     
 //Colisión vertical
-if (place_meeting( x , y + vsp, objBlock)){
+if (place_meeting( x , y + vsp, objmuro)){
     while (!place_meeting(x, y+sign(vsp), objmuro)){
             y += sign(vsp);
             }
@@ -152,6 +155,110 @@ if(fire){
          can_shoot = 0;}
          alarm[0] = 10;
         }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objenemigo1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Si lo toca el enemigo
+instance_destroy ();
+audio_play_sound(sndmuerte, 10, false);
+room_goto(Lose);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objBala2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Si lo toca la bala
+instance_destroy ();
+audio_play_sound(sndmuerte, 10, false);
+room_goto(Lose);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objBala1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Si lo toca la bala
+instance_destroy ();
+audio_play_sound(sndmuerte, 10, false);
+room_goto(Lose);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objenemigo2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Si lo toca el enemigo
+instance_destroy ();
+audio_play_sound(sndmuerte, 10, false);
+room_goto(Lose);
 </string>
           </argument>
         </arguments>

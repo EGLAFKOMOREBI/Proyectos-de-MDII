@@ -4,34 +4,51 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sndExploJugador</sound>
+    <sound>sound\sndExploEnemy</sound>
+    <sound>sound\sndmeta</sound>
+    <sound>sound\sndmuerte</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprJugador</sprite>
-    <sprite>sprites\sprEnemigo1</sprite>
-    <sprite>sprites\sprEenemigo2</sprite>
-    <sprite>sprites\sprEnemigo3</sprite>
+    <sprite>sprites\sprJugador_salto</sprite>
+    <sprite>sprites\sprJugador_izquierda</sprite>
+    <sprite>sprites\sprJugador_derecha</sprite>
+    <sprite>sprites\sprEenemigo1</sprite>
+    <sprite>sprites\sprEnemigo2</sprite>
     <sprite>sprites\sprBala</sprite>
     <sprite>sprites\sprBala1</sprite>
     <sprite>sprites\sprBala2</sprite>
     <sprite>sprites\sprmuro</sprite>
+    <sprite>sprites\sprExploEnemy</sprite>
+    <sprite>sprites\sprmeta</sprite>
+    <sprite>sprites\sprpeque</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\background7</background>
+    <background>background\background8</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\objJugador</object>
-    <object>objects\objenemigo1</object>
-    <object>objects\objenemigo2</object>
-    <object>objects\objenemigo3</object>
-    <object>objects\objBala1</object>
     <object>objects\objBala</object>
+    <object>objects\objenemigo1</object>
+    <object>objects\objBala1</object>
+    <object>objects\objenemigo2</object>
     <object>objects\objBala2</object>
     <object>objects\objmuro</object>
     <object>objects\objcontroladorenemigos</object>
+    <object>objects\objExploEnemy</object>
+    <object>objects\objmeta</object>
+    <object>objects\Objwin_lose</object>
+    <object>objects\objlife</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Nivel1</room>
+    <room>rooms\Win</room>
+    <room>rooms\Lose</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
