@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprBlock</sprite>
+    <sprite>sprites\sprite5</sprite>
     <sprite>sprites\sprBall</sprite>
     <sprite>sprites\sprBonus</sprite>
     <sprite>sprites\spr_Powerup</sprite>
@@ -16,6 +17,7 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\objBlock</object>
+    <object>objects\object4</object>
     <object>objects\objBall</object>
     <object>objects\objBonus</object>
     <object>objects\objEnemy</object>
